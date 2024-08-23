@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #2db31b;
+        }
+        .wrapper {
+            width: 1089px;
+            height: 800px;
+            background-color: #cc2525;
+            border: 1px solid brown;
+        }
+        .top-menu, .header, .footer {
+            width: 100%;
+            height: 50px;
+            background-color: #1b4397;
+            border: 1px solid brown;
+        }
+        .main {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .left-menu, .content-f, .content-r {
+            width: 32%;
+            padding: 10px;
+            background-color: #e1e1e1;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-menu">Top Menu</div>
+        <div class="header">Header</div>
+        <div class="main">
+            <div class="left-menu">Left Menu</div>
+            <div class="content-f">Content F</div>
+            <div class="content-r">Content R</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
